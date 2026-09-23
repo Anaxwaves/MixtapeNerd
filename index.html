@@ -162,8 +162,8 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Traditionally, recoding cassette mixtape is largely an empirical craft. You learn your deck, you learn your tape, you watch the meter, you listen carefully. Eventually, you develop an intuition for how hard you can push a particular combination of equipment and material. This can work remarkably well. But intuition has its limitations: you don't know what you can't hear, you don't see what a momentary meter can’t show. What sounds good on one system at one moment might not guarantee it will translate well across different systems or to different listeners. If something is wrong but unnoticed at the beginning, fixing it may mean re-recording the entire side again. So you keep testing, adjusting, and trying again. Getting it right on the first pass therefore becomes a highly desirable pursuit. That is where the MixtapeNerd software project begins.</p>
-			<p>Modern digital technology gives us another possibility. Before anything is recorded onto tape, the entire program already exists as data. We can analyze it. We can measure its peaks, dynamics and average levels. We can inspect the tape and recorder, we can estimate how much headroom is available. We can predict how well the program fits the physical medium, even adjust it if necessary. In other words, we can make informed decision before the tape starts moving. This does not replace listening. It simply gives some useful information to work with.</p>
+    <td><p>Traditionally, making cassette mixtape is largely an empirical craft. You learn your deck, you learn your tape, you watch the meter, you listen carefully. Eventually, you develop an intuition for how hard you can push a particular combination of equipment and material. This can work remarkably well. But intuition has its limitations: you don't know what you can't hear, or what a momentary meter can't reveal. What sounds good on one system at one moment doesn't necessarily translate well across different systems or to different listeners. If something is wrong but unnoticed at the beginning, fixing it may mean re-recording the entire side again. So you keep testing, adjusting, and trying again. Getting it right on the first pass therefore becomes a highly desirable pursuit. That is where the MixtapeNerd software project begins.</p>
+			<p>Modern digital technology gives us another possibility. Before anything is recorded onto tape, the entire program already exists as data. We can analyze it. We can measure its peaks, dynamics and average levels. We can inspect the tape and recorder, we can estimate how much headroom is available. We can predict how well the program will fit the physical medium, even making adjustment if necessary. In other words, we can make informed decision before the tape starts moving. This does not replace listening. It simply gives some useful information to work with.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -225,7 +225,7 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Heavily compressed modern pop may have relatively little difference between its average level and its peaks. Acoustic folk music may contain much larger changes in level. Classical music can have an even wider range. This is a reason why simply watching a cassette deck's meter and turning the recording level can be surprisingly unreliable. The cassette has a limited dynamic range. The recording needs to be loud enough to maintain a healthy distance from tape noise, but not so loud that sharp peaks push the tape into excessive saturation. Finding that balance is one of the fundamental challenge of cassette recording.</p>
+    <td><p>Heavily compressed modern pop music may have relatively little difference between its average level and its peaks. Acoustic folk music may contain much larger changes in level. Classical music can have an even wider range. This is a reason why simply watching a cassette deck's meter and turning the recording level can be surprisingly unreliable. Given the cassette’s limited dynamic range, the signal needs to be recorded loud enough to stay well above tape noise, but not so loud that sharp peaks drive the tape into excessive saturation. Finding that balance is one of the fundamental challenge of cassette recording.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -246,14 +246,14 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Tape saturation is not simply a wall where everything suddenly becomes distorted. As the signal approaches the tape's limits, distortion gradually increases. Cassette tape also has a characteristic nonlinear behavior that many listeners find musically pleasant. This psychoacoustic effect can create an illusion that higher recording levels are “better than source”, encouraging levels to be pushed beyond what would otherwise be considered prudent.</p>
+    <td><p>Unlike semiconductor-based amplifiers, tape saturation is not simply a wall where everything suddenly becomes distorted. As the signal approaches the tape's limits, distortion gradually increases. Cassette tape also has a characteristic nonlinear behavior that many listeners find musically pleasant. This psychoacoustic effect can create an illusion that higher recording levels are &quot;better than source&quot;, encouraging levels to be pushed beyond what would otherwise be considered prudent.</p>
       <p>Tape specifications therefore provide useful measurements such as Maximum Output Level (MOL) and Signal-to-Noise Ratio (SNR). Together, these measurements tell us something important about the practical operating range of a particular tape and recorder combined. The difficulty is that real music is not a test tone. Its peaks are constantly changing. A short transient may be difficult to predict simply by looking at an average level. This is where digital analysis becomes useful.</p>
       <p>Instead of asking:<br>
         &quot;Does this meter look about right?&quot;<br>
         we can ask:<br>
         &quot;Where are the actual peaks in this entire program, and how do they relate to the usable range of this tape and deck?&quot;<br>
         That is a much more interesting question.</p>
-      <p>Once we start thinking this way, something else becomes clear. A cassette is not simply a container into which digital audio is poured. It is a format with its own limitations and characteristics. Preparing music specifically for that format is therefore a distinct step, much like format-specific mastering in the recording industry — the source material has to be adapted to the destination in order to sound &quot;right&quot;. Sometimes it means nothing more than adjusting levels, if the original material is already perfectly suitable and should simply be left alone. Sometimes it means dealing with a large dynamic range mismatch. The important thing is that these decisions can be made deliberately. MixtapeNerd is designed around this idea.</p>
+      <p>Once we start thinking this way, something else becomes clear. A cassette is not simply a container into which digital audio is poured. It is a format with its own limitations and characteristics. Preparing music specifically for that format is therefore a distinct step, much like the format-specific mastering in the recording industry — the source material has to be adapted to the destination in order to sound &quot;right&quot;. Sometimes it means nothing more than adjusting levels, if the original material is already perfectly suitable and should simply be left alone. Sometimes it means dealing with a large dynamic range mismatch. The important thing is that these decisions can be made deliberately. MixtapeNerd is designed around this idea.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -316,9 +316,9 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Although the concept sounds obvious, it comes with practical time-fitting challenges when assembling a mixtape from digital files. MixtapeNerd provides two playlist builders for side A and B, which continuously show how much playing time is available.</p>
-			<p>With dozens of audio tracks added, the number of ways to distribute them onto side A and B may easily excess a million. You can find the best one by customizing a spreadsheet tool, or let MixtapeNerd do it in one click. But the best one may still not be the perfect fit.</p>
-      <p>If there is a little time left over at the tape's end, the app can automatically distribute the unused space as short silent separators between tracks. If the audio program is slightly too long, it can look for practical ways to recover time by trimming unnecessary silence, applying fade-out to every track or only the final track, or overlapping consecutive tracks by applying crossfades. The goal is not to make the music conform blindly to the tape. It is to help the music and the physical format work together. The result should feel intentional when the tape reaches the end of each side — not like the music simply ran out of room.</p>
+    <td><p>Although the concept sounds simple, assembling a mixtape from digital files presents practical time-fitting challenges. MixtapeNerd addresses this with two playlist builders, one for each side, that continuously show how much playing time is available.</p>
+			<p>Once you have dozens of tracks, there can be millions of possible ways to divide them between Side A and Side B. Finding the best combination with a spreadsheet can be a surprisingly tedious task, or you can let MixtapeNerd find one for you with a single click. But even the best combination may not be a perfect fit,  and that’s where the catch is.</p>
+      <p>If there is a little time left over at the tape's end, the app can automatically distribute the unused space as short silent separators between tracks. If the audio program is slightly too long, it can look for practical ways to recover time by trimming unnecessary silence, applying fade-out to every track or only the final track, or overlapping consecutive tracks by applying smooth crossfades. The goal is not to force the music conform blindly to the tape. It is to help the music and the physical format work together. The result should feel intentional when the tape reaches the end of each side — not like the music simply ran out of room.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -349,7 +349,8 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Once the playlist is established, the next question is: how should this particular music be recorded onto this particular tape with the particular recorder? MixtapeNerd can analyze the complete program using industry-standard measurements such as Peak, Quasi-Peak, RMS, VU, LUFS and Crest Factor. These numbers are not there to turn music into mathematics. They provide a way of seeing characteristics that are difficult to judge reliably from a short listening session or watching a momentary meter.</p>
+    <td><p>Once the playlist is established, the next question is: how should this particular music be recorded onto this particular tape using the particular recorder?</p>
+			<p>MixtapeNerd can analyze the complete program using industry-standard measurement including Peak, Quasi-Peak, RMS, VU, LUFS and Crest Factor. These numbers are not there to turn music into mathematics. They provide a way of seeing characteristics that are difficult to judge reliably from a short listening session or watching a momentary meter.</p>
       <p>The app can then help determine the practical operating range of the cassette and deck, using professional measurements such as MOL and SNR relative to a Reference Level. For users with a three-head cassette deck and off-tape monitoring, MixtapeNerd can go further by helping measure the actual behavior of the recording system. Once the source and destination are understood, the app can help match them with level normalization and dynamic-range adapting processors.</p>
     <td>&nbsp;</td>
   </tr>
@@ -392,7 +393,7 @@ function updateWinAnchors()
   <tr>
     <td>&nbsp;</td>
     <td><p>Imagine putting together dozens of digital audio files from different sources and discovering that every one was previously mastered at a slightly different level. You can compensate while recording by constantly adjusting the level, or you can let the app do it automatically.</p>
-      <p>Level normalization simply applies an appropriate gain adjustment to each digital track so that the tracks are better aligned before they reach the cassette. No new information is being invented and no musical detail needs to be changed. It's a lossless process. The important thing is consistency. A mixtape should feel like one continuous listening experience, rather than a collection of unrelated mastering decisions.</p>
+      <p>Technically, level normalization applies an appropriate gain adjustment to each digital track so the levels of tracks are better matched before they reach the cassette. It’s a lossless process: no new information is invented, and no musical detail is altered. The key is consistency. A mixtape should feel like one continuous listening experience, rather than a collection of tracks with unrelated mastering levels.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -413,8 +414,8 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Cassette has less usable dynamic range than modern digital audio. Fortunately, most contemporary music has already been compressed to some degree, so additional compression is often unnecessary. But there are exceptions.</p>
-      <p>A very dynamic material may contain peaks that are difficult to accommodate while keeping its quietest passages comfortably above tape noise. In such cases, carefully applied dynamic-range compression can help the recording fit the medium.</p>
+    <td><p>Cassette has significantly less usable dynamic range than modern digital audio. Fortunately, most contemporary music has already been compressed to some degree, which can be comfortably recorded on cassette, so additional compression is often unnecessary. That said, there are exceptions where additional compression can still be beneficial.</p>
+      <p>Some music can have such a big difference between their loudest and quietest parts that they’re difficult to fit onto tape. If the loudest parts are kept at a safe level, the quietest parts can end up getting lost in the tape noise. At that point, some form of compression is going to happen anyway. The question is whether we apply it deliberately and control how it sounds, or let the limitations of the medium compress the recording for us in a less predictable way. Using a compressor carefully lets us manage that process and make the recording work better on tape.</p>
       <p>The opposite can also be useful. Some music has already been compressed very heavily before it reaches the cassette. A gentle expansion process can sometimes make such material feel less constrained and more comfortable over a long listening session.</p>
       <p>Neither approach is automatically better. The purpose is simply to make the source and the medium cooperate.</p>
     <td>&nbsp;</td>
@@ -437,8 +438,8 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>Sometimes, compression can also be used for specific listening scenarios. For example, when creating a mixtape intended for listening in noisy environments, such as in a car, on public transportation, in a crowded public space, applying appropriate compression can improve intelligibility by keeping quieter sounds audible without requiring frequent volume adjustments.</p>
-      <p>As you might notice that some pre-recorded commercial cassettes, despite using relatively modest tape formulations, can achieve surprisingly hotter recording than even premium blank tapes can do. This is achievable by applying an aggressive compression similar to the &quot;Loudness Wars&quot;.</p>
+    <td><p>If a cassette mixtape is intended for specific listening environments, additional compression can sometimes be beneficial. For example, when creating a mixtape for listening in a car, on public transportation, in a crowded public space ..., applying more compression can improve intelligibility by keeping quieter sounds audible without requiring frequent volume adjustments.</p>
+      <p>You may have noticed that some pre-recorded commercial cassettes can achieve surprisingly “hot” recording levels, even when they use relatively modest tape formulations. Try recording the same music at home, and you may find that even a much better blank tape can't reach the same level without distortion. This can make it seem as though commercial cassettes were recorded using a magically powerful recorder. In reality, one of the key factors is often aggressive dynamic compression, similar in principle to the techniques associated with the “Loudness Wars”. This kind of processing once required audio compression equipment that was not commonly available to home users. With MixtapeNerd, however, you can now achieve a similar effect easily, if you really want to.</p>
       <td>&nbsp;</td>
   </tr>
   <tr>
@@ -459,7 +460,8 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>There is another key part of the process that is easy to overlook. A computer and a cassette deck use different ways of measuring audio level. To record accurately, those two worlds need a common reference. A test tone provides a bridge between them. Once the analog reference level of the cassette system is known, it can be related to the digital level used by the computer. This allows the software to show both worlds together and helps determine where the digital signal should sit relative to the actual operating range of the tape deck.</p>
+    <td><p>Connecting a cassette deck to a computer for mix-taping is essentially a matter of connecting two linear audio devices in a chain. To make this work properly, their reference levels need to be matched. This can be done by calibrating both devices with the same test tone.</p>
+			<p>The main challenge, however, is accounting for the difference in dynamic range between the two formats. This requires a specialized software audio meter that displays digital and analog level scales side by side. Once the cassette’s maximum output level (MOL) and signal-to-noise ratio (SNR) are entered on the analog scale, the software can automatically map the corresponding dynamic range and reference level to the digital domain. It can then convert these values into the DSP parameters needed for format-specific mastering.</p>
       <p>When using a 3-head cassette deck with off-tape monitoring feature, the app provides dedicated tools for fine-tuning bias/level, and measuring the deck's safe operating range. You don't have to rely entirely on estimates. You can measure the system you actually own.</p>
     <td>&nbsp;</td>
   </tr>
@@ -481,10 +483,10 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>When the project is ready, MixtapeNerd can export a master audio file for each cassette side, making offline duplication possible. It can also generate an auxiliary calibration file containing a reference tone for use with the recorder system.</p>
-      <p>For direct recording, the complete project can be played from the app in real time. </p>
+    <td><p>When the project is ready, MixtapeNerd can export a master audio file for each cassette side, making offline duplication possible. It can also generate an auxiliary calibration file containing a reference tone for calibrating the future duplication system.</p>
+      <p>Alternatively, the app can play the entire project from start to finish, enabling users to record a cassette mixtape directly in real time.</p>
       <p>With a suitable three-head deck having off-tape monitoring function, the app can also compare the off-tape signal with the original source during recording. The deviations can be visualized along the timeline, making it easier to identify where the physical recording has departed from the digital source.</p>
-      <p>The track list and durations can also be exported to a plain text file for creating a J-card.</p>
+      <p>The track list and track  durations can be exported to a plain text file for creating a J-card.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -517,7 +519,7 @@ function updateWinAnchors()
     <td>&nbsp;</td>
     <td><p>No.</p>
       <p>And that is an important part of the philosophy behind MixtapeNerd. You can absolutely make a cassette mixtape without doing any of this. You can listen to the source, watch the meters, turn the knob, press Record and enjoy the result. For many people, that is all they will ever need.</p>
-      <p>On the other hand, the cassette was not born for recording digital audio. Making digital-to-cassette mixtape is not always technically safe but the risks are manageable with the right means, which may lie outside our familiar experience. Perhaps it's time to think out of the box and embrace the growing pains. That means, we may need to step beyond our regular comfort zone, and ensure the cassette and deck will work within their comfort zone. This is not effortless though. Whether the gain justifies the pain is ultimately a personal choice. But it’s always good to have one more option available.</p>
+      <p>On the other hand, the cassette was not born for recording digital audio. Making digital-to-cassette mixtape is not always technically safe but the risks are manageable with the right means, which may lie outside our familiar experience. Perhaps it's time to think out of the box and embrace the growing pains. That means, we may need to step beyond our regular comfort zone, and ensure the cassette and deck will work within their comfort zone. This is not effortless though, as we have to understand their &quot;language&quot;. Whether the gain justifies the pain is ultimately a personal choice. But it’s always good to have one more option available.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -539,8 +541,8 @@ function updateWinAnchors()
   <tr>
     <td>&nbsp;</td>
     <td><p>Technically, you can.</p>
-      <p>Most of the individual tasks involved in preparing a digital-to-cassette recording can already be accomplished with general-purpose audio apps and plug-ins, often inexpensive or free. The problem is the workflow. One program arrange tracks, another analyzes levels, another handles dynamics, something else measures the tape deck. Then you have to move between them, remember settings, maintain a consistent reference and somehow bring everything together at the end. The tools exist, the workflow is the missing piece.</p>
-      <p>MixtapeNerd brings these functions into one environment designed specifically around the digital-to-cassette process. It is designed to start simply. At first, it can look like a playlist application: put some tracks on Side A, put some on Side B, and see how they fit. Then, when you are ready, you can go deeper. You can analyze the music, you can characterize your tape and deck, you can establish a reference level, you can examine dynamics, you can prepare the source for the medium, and you can monitor the recording. The app does not require you to learn everything at once. The workflow can grow with you.</p>
+      <p>Most of the individual tasks involved in preparing a digital-to-cassette recording can already be accomplished with general-purpose audio apps and plug-ins, at a little to no cost. The problem is the workflow. One program arrange tracks, another analyzes levels, another handles dynamics, something else measures the tape deck. Then you have to move between them, remember settings, maintain a consistent reference and somehow bring everything together at the end. The tools exist, the workflow is the missing piece.</p>
+      <p>MixtapeNerd brings these functions into one environment designed specifically around the digital-to-cassette process. It is designed to start simply. At first, it can look like a playlist app: put some tracks on Side A, put some on Side B, and see how they fit. Then, when you are ready, you can go deeper. You can analyze the music, you can characterize your tape and deck, you can establish a reference level, you can examine dynamics, you can prepare the source for the medium, and you can monitor the recording. The app does not require you to learn everything at once. The workflow can grow with you.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -616,7 +618,8 @@ function updateWinAnchors()
   <tr>
     <td>&nbsp;</td>
     <td><p>Probably not.</p>
-      <p>If your favorite part of making a cassette is simply pressing Record and seeing what happens, there is no reason to change that. MixtapeNerd is for the people who enjoy going deeper. For the people who have calibrated a deck and then wanted to know what else could be measured and fine-tuned. For the people who don't mind opening the hood because understanding how something works makes using it more enjoyable. Yet, there is a learning curve, a non-trivial one. The application comes with documentation, wizard, task-specific guides and online videos to help. But it does not try to turn cassette recording into a one-click operation, nor a complex engineering excise. Instead, it gives you another way to approach the craft.</p>
+      <p>If your favorite part of making a cassette is simply pressing Record and seeing what happens, there is no reason to change that. MixtapeNerd is for the people who enjoy going deeper. For those who have calibrated a deck and then wanted to know what else could be measured and fine-tuned. For the people who don't mind opening the hood because understanding how something works makes using it more enjoyable. Of course, not everyone has to agree with or appreciate this philosophy in order to make a satisfying mixtape</p>
+			<p>Yet, there is a learning curve, a non-trivial one. To help overcome it, the application comes with documentation, wizard, task-specific guides and online videos. But it does not try to turn cassette recording into a cool operation, nor does it pretend the process is effortless or automatic. Instead, it gives you another way to approach the craft.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -637,7 +640,7 @@ function updateWinAnchors()
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td><p>The ultimate goal of MixtapeNerd is modest. Not to make cassette better than digital, not to make every tape sound identical, not to remove the character of analog recording. It is meant to give you a better chance of getting the recording right the first time. Because when you have spent time choosing the music, arranging the sides and preparing the tape, the last thing you want is to discover after an hour of recording that something could have been avoided. The computer can do the analysis. The cassette can provide the character. And you can make the decisions. That is the idea behind MixtapeNerd: modern tools helping an old format become a little more deliberate, a little more predictable, and perhaps a little more enjoyable. The mixtape may have started as a practical way of sharing music. Today, it can be something else. A small physical object, a carefully planned listening experience, a piece of analog Hi-Fi craft in the digital age.</p>
+    <td><p>The ultimate goal of MixtapeNerd is modest. Not to make cassette better than digital, not to make every tape sound identical, not to remove the character of analog recording. It is meant to give you a better chance of getting the recording right the first time. Because when you have spent time choosing the music, arranging the sides and preparing the tape, the last thing you want is to discover after an hour of recording that something could have been avoided. The computer can do the analysis. The cassette can provide the character. And you can make the decisions. That is the idea behind MixtapeNerd: modern tools helping an old format become a little more deliberate, a little more predictable, and perhaps a little more enjoyable. Cassette mixtape may have started as a practical way of sharing music. Today, it can be something else. A small physical object, a carefully planned listening experience, a piece of analog Hi-Fi craft in the digital age.</p>
     <td>&nbsp;</td>
   </tr>
   <tr>
